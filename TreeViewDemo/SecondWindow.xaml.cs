@@ -1,27 +1,20 @@
 ﻿using System.Windows;
+using TreeViewDemo.ViewModels;
 
-namespace ListViewDemo
+namespace TreeViewDemo
 {
     /// <summary>
     /// Interaction logic for SecondWindow.xaml
     /// </summary>
     public partial class SecondWindow : Window
     {
+        /// <summary>
+        /// Initialize second window with MainViewModel
+        /// </summary>
         public SecondWindow()
         {
             InitializeComponent();
-        }
-
-        /// <summary>
-        /// Shows next window and close this window
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void NextButton_Click(object sender, RoutedEventArgs e)
-        {
-            ThirdWindow thirdWindow = new ThirdWindow();
-            thirdWindow.Show();
-            this.Close();
+            this.DataContext = new MainViewModel();
         }
 
         /// <summary>

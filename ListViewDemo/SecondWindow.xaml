@@ -26,7 +26,7 @@
                     <TextBlock>Doggo</TextBlock>
                 </StackPanel>
             </ListViewItem>
-            <ListViewItem IsSelected="True">
+            <ListViewItem>
                 <StackPanel Orientation="Vertical">
                     <Image Source="Assets/cat.jpg" Width="150" Margin="5" />
                     <TextBlock>Cat</TextBlock>

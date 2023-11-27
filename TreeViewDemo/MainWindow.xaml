@@ -5,8 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TreeViewDemo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="TreeView Demo" MinHeight="300" MinWidth="300" Height="300" Width="300"
+        WindowStartupLocation="CenterScreen"
+        >
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="25"/>
+        </Grid.RowDefinitions>
 
+        <!-- Title -->
+        <Label Content="Einfacher TreeView" FontWeight="Bold" HorizontalAlignment="Center"></Label>
+
+        <!-- TreeView -->
+        <TreeView Grid.Row="1" Margin="5">
+            <TreeViewItem Header="Früchte">
+                <TreeViewItem Header="Mango" />
+                <TreeViewItem Header="Granatapfel" />
+                <TreeViewItem Header="Getrocknete Früchte">
+                    <TreeViewItem Header="Getrocknete Bananen ;)"/>
+                </TreeViewItem>
+            </TreeViewItem>
+            <TreeViewItem Header="Exotische Früchte">
+                <TreeViewItem Header="Maracuja" />
+                <TreeViewItem Header="Drachenfrucht">
+                </TreeViewItem>
+            </TreeViewItem>
+            <TreeViewItem Header="Gemüse">
+                <TreeViewItem Header="Karotte" />
+                <TreeViewItem Header="Sellerie" />
+            </TreeViewItem>
+        </TreeView>
+
+        <!-- Button -->
+        <Button Grid.Row="2" Width="90" Height="20" Margin="2" Content="Weiter" Click="NextButton_Click"></Button>
     </Grid>
 </Window>

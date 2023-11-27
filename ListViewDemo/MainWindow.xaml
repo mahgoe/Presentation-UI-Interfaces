@@ -17,12 +17,12 @@
         </Grid.RowDefinitions>
 
         <!-- Title -->
-        <Label Content="Standard Listview" FontWeight="Bold" HorizontalAlignment="Center"></Label>
+        <Label Content="Standard ListView" FontWeight="Bold" HorizontalAlignment="Center"></Label>
         
         <!-- ListView -->
         <ListView Margin="5" Grid.Row="1">
             <ListViewItem Content="Ein ListView Element"></ListViewItem>
-            <ListViewItem IsSelected="True" Content="Dieser ist angewählt"></ListViewItem>
+            <ListViewItem IsSelected="True" Content="Dieses Element ist Standard ausgewählt"></ListViewItem>
             <ListViewItem Content="Ein Element mehr"></ListViewItem>
         </ListView>
 
