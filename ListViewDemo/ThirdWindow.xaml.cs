@@ -24,12 +24,22 @@ namespace ListViewDemo
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Add new item to the ListView
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AddBtn_Click(object sender, RoutedEventArgs e)
         {
             var newItem = TextInput.Text;
             List.Items.Add(new ListViewItem { Content = newItem });
         }
 
+        /// <summary>
+        /// Return back to the last window and close this window
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
             SecondWindow secondWindow = new SecondWindow();

@@ -5,8 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RichTextBoxDemo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="RichTextBox Demo" Height="500" Width="650" MinHeight="500" MinWidth="600"
+        WindowStartupLocation="CenterScreen"
+        >
     <Grid>
+        <DockPanel>
+            <!-- Formatting controls -->
+            <ToolBar DockPanel.Dock="Top">
+                <ToggleButton x:Name="btnBold" Click="Bold_Click">Fett</ToggleButton>
+                <ToggleButton x:Name="btnItalic" Click="Italic_Click">Kursiv</ToggleButton>
+                <ToggleButton x:Name="btnUnderline" Click="Underline_Click">Unterstrichen</ToggleButton>
+                <ComboBox Width="40" x:Name="FontSizeComboBox" SelectionChanged="FontSizeComboBox_SelectionChanged">
+                    <ComboBoxItem Content="10"/>
+                    <ComboBoxItem Content="12"/>
+                    <ComboBoxItem Content="14"/>
+                    <ComboBoxItem Content="16"/>
+                    <ComboBoxItem Content="18"/>
+                    <ComboBoxItem Content="20"/>
+                    <ComboBoxItem Content="22"/>
+                    <ComboBoxItem Content="24"/>
+                    <ComboBoxItem Content="26"/>
+                    <ComboBoxItem Content="28"/>
+                    <ComboBoxItem Content="30"/>
+                    <ComboBoxItem Content="32"/>
+                    <ComboBoxItem Content="34"/>
+                </ComboBox>
 
+                <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" HorizontalAlignment="Left"/>
+                <TextBox Width="200" Height="20" x:Name="SearchTextBox" Margin="5,0,0,0"/>
+                <Button Content="Suchen" x:Name="SearchButton" Click="SearchButton_Click"/>
+                <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" HorizontalAlignment="Left"/>
+                <Button Content="Zurücksetzen" x:Name="ClearButton" Click="ClearButton_Click" Margin="5,0,0,0"/>
+            </ToolBar>
+ 
+            <!-- RichTextBox -->
+            <RichTextBox x:Name="richTextBox" Margin="5" VerticalScrollBarVisibility="Auto" />
+        </DockPanel>
     </Grid>
 </Window>

@@ -15,8 +15,10 @@
             <RowDefinition Height="25"/>
         </Grid.RowDefinitions>
 
+        <!-- Title -->
         <Label Content="ListView mit Bildern" FontWeight="Bold" HorizontalAlignment="Center"></Label>
-        
+
+        <!-- ListView -->
         <ListView Grid.Row="1" Margin="5">
             <ListViewItem>
                 <StackPanel Orientation="Vertical">
@@ -32,6 +34,7 @@
             </ListViewItem>
         </ListView>
 
+        <!-- Button -->
         <Button Grid.Row="2" Width="90" Height="20" Margin="5,2,2,2" Content="Zurück" HorizontalAlignment="Left" Click="BackButton_Click"></Button>
         <Button Grid.Row="2" Width="90" Height="20" Margin="2,2,5,2" Content="Weiter" HorizontalAlignment="Right" Click="NextButton_Click"></Button>
     </Grid>

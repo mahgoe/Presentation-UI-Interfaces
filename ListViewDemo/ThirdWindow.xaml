@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ListViewDemo"
         mc:Ignorable="d"
-        Title="Listview Demo" MinHeight="400" MinWidth="300" Height="400" Width="300"
+        Title="ListView Demo" MinHeight="400" MinWidth="300" Height="400" Width="300"
         WindowStartupLocation="CenterScreen"
         >
     <Grid>
@@ -16,8 +16,10 @@
             <RowDefinition Height="25"/>
         </Grid.RowDefinitions>
 
+        <!-- Title -->
         <Label Content="Einkaufsliste" FontWeight="Bold" HorizontalAlignment="Center"></Label>
 
+        <!-- ListView -->
         <StackPanel Grid.Row="1" Orientation="Horizontal">
             <TextBox Width="120" Height="20" Name="TextInput" Margin="5,0,5,0"></TextBox>
             <Button  Height="20" Content="Eintrag hinzufügen" Name="AddBtn" Click="AddBtn_Click"/>
@@ -25,10 +27,11 @@
 
         <ListView Margin="5" Grid.Row="2" Name="List">
             <ListViewItem Content="Apfel"></ListViewItem>
-            <ListViewItem IsSelected="True" Content="Banane"></ListViewItem>
+            <ListViewItem Content="Banane"></ListViewItem>
             <ListViewItem Content="Milch"></ListViewItem>
         </ListView>
-
+        
+        <!-- Button -->
         <Button Grid.Row="3" Width="90" Height="20" Margin="2" Content="Zurück" Click="BackButton_Click"></Button>
     </Grid>
 </Window>

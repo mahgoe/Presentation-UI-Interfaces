@@ -25,6 +25,11 @@ namespace ListViewDemo
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Shows next window and close this window
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void NextButton_Click(object sender, RoutedEventArgs e)
         {
             SecondWindow secondWindow = new SecondWindow();
