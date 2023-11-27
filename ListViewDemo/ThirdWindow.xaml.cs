@@ -10,22 +10,27 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace ListViewDemo
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for ThirdWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ThirdWindow : Window
     {
-        public MainWindow()
+        public ThirdWindow()
         {
             InitializeComponent();
         }
 
-        private void NextButton_Click(object sender, RoutedEventArgs e)
+        private void AddBtn_Click(object sender, RoutedEventArgs e)
+        {
+            var newItem = TextInput.Text;
+            List.Items.Add(new ListViewItem { Content = newItem });
+        }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
         {
             SecondWindow secondWindow = new SecondWindow();
             secondWindow.Show();
