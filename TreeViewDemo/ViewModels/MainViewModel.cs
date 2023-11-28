@@ -82,6 +82,41 @@ namespace TreeViewDemo.ViewModels
                         CreateTreeItem("M135i"),
                         CreateTreeItem("M6")
                     )
+                ),
+                CreateTreeItem("Linux Distributionen",
+                    CreateTreeItem("Debian-basiert",
+                        CreateTreeItem("Ubuntu",
+                        CreateTreeItem("Xubuntu"),
+                        CreateTreeItem("Kubuntu"),
+                        CreateTreeItem("Lubuntu")
+                 ),
+                CreateTreeItem("Debian",
+                    CreateTreeItem("Raspbian"),
+                    CreateTreeItem("MX Linux")
+                ),
+                    CreateTreeItem("Mint")
+                ),
+                CreateTreeItem("Red Hat-basiert",
+                    CreateTreeItem("Fedora",
+                    CreateTreeItem("Korora"),
+                    CreateTreeItem("Fedora Silverblue")
+                ),
+                CreateTreeItem("CentOS"),
+                CreateTreeItem("Red Hat Enterprise Linux")
+                ),
+               CreateTreeItem("Arch-basiert",
+                CreateTreeItem("Arch Linux",
+                CreateTreeItem("Manjaro"),
+                CreateTreeItem("Antergos")
+                ),
+              CreateTreeItem("Arch Labs"),
+                CreateTreeItem("ArcoLinux")
+            ),
+            CreateTreeItem("Unabhängige Distributionen",
+                CreateTreeItem("Solus"),
+                CreateTreeItem("Gentoo"),
+                CreateTreeItem("Slackware")
+                    )
                 )
             };
         }
