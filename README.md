@@ -55,9 +55,6 @@
 
 - Ein Container, der das Scrollen innerhalb seines Inhalts ermöglicht.
 - Kann jedes Steuerelement aufnehmen und Scrollbalken bereitstellen.
-
-### Vollständige Erläuterung
-
 - Ermöglicht das vertikale und horizontale Scrollen.
 - Automatische Anpassung der Scrollbalken basierend auf dem Inhalt.
 
