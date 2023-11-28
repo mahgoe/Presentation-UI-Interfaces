@@ -1,0 +1,25 @@
+﻿<Window x:Class="ToggleButtonDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ToggleButtonDemo"
+        mc:Ignorable="d"
+        Title="ToggleButton Demo" Height="250" Width="350" MinHeight="250" MinWidth="350" 
+        WindowStartupLocation="CenterScreen"
+        >
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+
+        <!-- Simple ToggleButton -->
+        <ToggleButton Content="Ein/Aus" Width="100" Margin="5"/>
+
+        <!-- ToggleButton to change background -->
+        <ToggleButton Content="Change background" Width="120" Margin="5" Click="ToggleButton_Click"/>
+        
+        <!-- ToggleButton to visible a box -->
+        <ToggleButton Name="visibilityToggle" Content="Zeige/Verstecke Box" Width="150" Margin="5" Click="VisibilityToggle_Click"/>
+        <TextBlock Name="toggleTextBlock" Background="Orange" Width="100" Height="50" 
+                   Visibility="Collapsed" Text="Sichtbar!" TextAlignment="Center"/>
+
+    </StackPanel>
+</Window>
