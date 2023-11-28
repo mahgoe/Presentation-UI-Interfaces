@@ -63,5 +63,5 @@
 
 ### Konkrete Anwendung und Einsatzbereiche
 
-- Anzeigen von Inhalten, die größer als der sichtbare Bereich sind.
+- Anzeigen von Inhalten, die grösser als der sichtbare Bereich sind.
 - Webseiten-ähnliche Inhalte, lange Listen und Dokumente.
